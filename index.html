@@ -1,335 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Portfolio | Muhammad Makhdum Ibrahim</title>
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="brand">Makhdum<span>.</span></a>
 
-        <div class="container">
-
-            <a class="navbar-brand fw-bold" href="#">
-                Muhammad Makhdum Ibrahim
-            </a>
-
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-
-                <span class="navbar-toggler-icon"></span>
-
+            <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+                <span></span><span></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">
-                            Home
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">
-                            About
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#project">
-                            Project
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">
-                            Contact
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#project">Project</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
+    </header>
 
-    </nav>
-
-    <!-- Hero -->
-    <section id="home" class="hero text-center">
-
-        <div class="container">
-
-            <img src="wa.jpeg"
-                alt="Muhammad Makhdum Ibrahim"
-                class="profile-img">
-
-            <h1 class="mt-4">
-                Muhammad Makhdum Ibrahim
-            </h1>
-
-            <h4 class="text-primary">
-                Designer • Programmer • Student
-            </h4>
-
-            <p class="mt-3">
-                Selamat datang di website portfolio saya.
-                Saya memiliki ketertarikan pada dunia desain,
-                pemrograman, fotografi, dan pengembangan website.
-            </p>
-
-            <a href="#project" class="btn btn-primary btn-lg mt-3">
-                Lihat Project
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- About -->
-    <section id="about">
-
-        <div class="container">
-
-            <div class="row text-center mb-5">
-
-                <div class="col">
-
-                    <h2>About Me</h2>
-
+    <main>
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text reveal">
+                    <span class="eyebrow">Designer • Programmer • Student</span>
+                    <h1>Muhammad <br>Makhdum Ibrahim</h1>
+                    <p class="hero-desc">
+                        Selamat datang di website portfolio saya. Saya memiliki ketertarikan pada dunia desain,
+                        pemrograman, fotografi, dan pengembangan website.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#project" class="btn btn-primary">Lihat Project</a>
+                        <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+                    </div>
                 </div>
 
+                <div class="hero-photo reveal">
+                    <div class="photo-wrap">
+                        <img src="wa.jpeg" alt="Muhammad Makhdum Ibrahim">
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="row align-items-center">
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container about-grid">
+                <div class="section-head reveal">
+                    <span class="section-label">01 — Tentang Saya</span>
+                    <h2>About Me</h2>
+                </div>
 
-                <div class="col-md-6">
-
-                    <h3>Hello 👋</h3>
-
+                <div class="about-content reveal">
+                    <h3>Halo 👋</h3>
                     <p>
-                        Halo, saya Muhammad Makhdum Ibrahim.
-                        Saya adalah seorang pelajar yang menyukai
-                        dunia teknologi, desain grafis,
-                        fotografi, dan pemrograman website.
+                        Halo, saya Muhammad Makhdum Ibrahim. Saya adalah seorang pelajar yang menyukai
+                        dunia teknologi, desain grafis, fotografi, dan pemrograman website.
                     </p>
-
                     <p>
-                        Saya senang belajar hal baru,
-                        membuat desain kreatif,
-                        serta membangun website yang
+                        Saya senang belajar hal baru, membuat desain kreatif, serta membangun website yang
                         modern, menarik, dan responsif.
                     </p>
-
+                    <ul class="skill-list">
+                        <li>Graphic Design</li>
+                        <li>Photography</li>
+                        <li>HTML &amp; CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                        <li>Canva &amp; Photoshop</li>
+                    </ul>
                 </div>
-
-                <div class="col-md-6 text-center">
-
-                    <img src="wa.jpeg"
-                        class="img-fluid rounded-4 shadow"
-                        width="350"
-                        alt="Profile">
-
-                </div>
-
             </div>
-
-        </div>
-
-    </section>
+        </section>
 
         <!-- Project -->
-    <section id="project" class="py-5 bg-light">
+        <section id="project" class="section section-alt">
+            <div class="container">
+                <div class="section-head center reveal">
+                    <span class="section-label">02 — Portofolio</span>
+                    <h2>My Projects</h2>
+                    <p>Beberapa hasil karya yang pernah saya buat.</p>
+                </div>
 
-        <div class="container">
-
-            <div class="text-center mb-5">
-                <h2>My Projects</h2>
-                <p>Beberapa hasil karya yang pernah saya buat.</p>
-            </div>
-
-            <div class="row">
-
-                <!-- Project 1 -->
-                <div class="col-md-4 mb-4">
-
-                    <div class="card project-card h-100">
-
-                        <img src="4.jpeg" class="card-img-top" alt="Photography">
-
-                        <div class="card-body">
-
-                            <h5 class="card-title">
-                                Photography
-                            </h5>
-
-                            <p class="card-text">
-                                Hasil karya fotografi yang saya dokumentasikan
-                                sebagai bagian dari portfolio pribadi.
-                            </p>
-
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <div class="project-img">
+                            <img src="4.jpeg" alt="Photography">
                         </div>
+                        <div class="project-body">
+                            <span class="project-tag">01 · Visual</span>
+                            <h3>Photography</h3>
+                            <p>Hasil karya fotografi yang saya dokumentasikan sebagai bagian dari portfolio pribadi.</p>
+                        </div>
+                    </article>
 
+                    <article class="project-card reveal">
+                        <div class="project-img">
+                            <img src="3.jpeg" alt="Graphic Design">
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">02 · Design</span>
+                            <h3>Graphic Design</h3>
+                            <p>Beberapa desain kreatif menggunakan Canva dan Adobe Photoshop.</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-img">
+                            <img src="5.jpeg" alt="Web Development">
+                        </div>
+                        <div class="project-body">
+                            <span class="project-tag">03 · Code</span>
+                            <h3>Web Development</h3>
+                            <p>Website sederhana menggunakan HTML, CSS, Bootstrap, dan JavaScript.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="container contact-grid">
+                <div class="contact-info reveal">
+                    <span class="section-label">03 — Kontak</span>
+                    <h2>Contact Me</h2>
+                    <p>Silakan hubungi saya melalui formulir berikut. Saya akan membalas secepat mungkin.</p>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-row">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" required>
                     </div>
-
-                </div>
-
-                <!-- Project 2 -->
-                <div class="col-md-4 mb-4">
-
-                    <div class="card project-card h-100">
-
-                        <img src="3.jpeg" class="card-img-top" alt="Design">
-
-                        <div class="card-body">
-
-                            <h5 class="card-title">
-                                Graphic Design
-                            </h5>
-
-                            <p class="card-text">
-                                Beberapa desain kreatif menggunakan Canva
-                                dan Adobe Photoshop.
-                            </p>
-
-                        </div>
-
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
                     </div>
-
-                </div>
-
-                <!-- Project 3 -->
-                <div class="col-md-4 mb-4">
-
-                    <div class="card project-card h-100">
-
-                        <img src="5.jpeg" class="card-img-top" alt="Website">
-
-                        <div class="card-body">
-
-                            <h5 class="card-title">
-                                Web Development
-                            </h5>
-
-                            <p class="card-text">
-                                Website sederhana menggunakan HTML,
-                                CSS, Bootstrap, dan JavaScript.
-                            </p>
-
-                        </div>
-
+                    <div class="form-row">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" rows="5" required></textarea>
                     </div>
-
-                </div>
-
+                    <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+                    <p class="form-status" id="formStatus"></p>
+                </form>
             </div>
-
-        </div>
-
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-5">
-
-        <div class="container">
-
-            <div class="text-center mb-5">
-
-                <h2>Contact Me</h2>
-                <p>Silakan hubungi saya melalui formulir berikut.</p>
-
-            </div>
-
-            <div class="row justify-content-center">
-
-                <div class="col-md-7">
-
-                    <form>
-
-                        <div class="mb-3">
-
-                            <label class="form-label">
-                                Nama Lengkap
-                            </label>
-
-                            <input type="text" class="form-control">
-
-                        </div>
-
-                        <div class="mb-3">
-
-                            <label class="form-label">
-                                Email
-                            </label>
-
-                            <input type="email" class="form-control">
-
-                        </div>
-
-                        <div class="mb-3">
-
-                            <label class="form-label">
-                                Pesan
-                            </label>
-
-                            <textarea rows="5" class="form-control"></textarea>
-
-                        </div>
-
-                        <button class="btn btn-primary w-100">
-                            Kirim Pesan
-                        </button>
-
-                    </form>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-primary text-white text-center py-4">
-
-        <div class="container">
-
-            <h5>Muhammad Makhdum Ibrahim</h5>
-
-            <p class="mb-1">
-                Designer • Programmer • Student
-            </p>
-
-            <small>
-                © 2026 All Rights Reserved.
-            </small>
-
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <h4>Muhammad Makhdum Ibrahim</h4>
+                <p>Designer • Programmer • Student</p>
+            </div>
+            <a href="#home" class="back-top">Kembali ke atas ↑</a>
         </div>
-
+        <div class="container footer-bottom">
+            <small>© 2026 All Rights Reserved.</small>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navbar: efek saat scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 20);
+        });
 
+        // Menu mobile
+        const toggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            toggle.classList.toggle('open');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                toggle.classList.remove('open');
+            });
+        });
+
+        // Tandai link aktif sesuai section
+        const sections = document.querySelectorAll('section[id]');
+        const navAnchors = navLinks.querySelectorAll('a');
+        window.addEventListener('scroll', () => {
+            let current = 'home';
+            sections.forEach(sec => {
+                if (window.scrollY >= sec.offsetTop - 160) current = sec.id;
+            });
+            navAnchors.forEach(a => {
+                a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+            });
+        });
+
+        // Animasi muncul saat di-scroll
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(el => observer.observe(el));
+
+        // Form (contoh, belum terhubung ke server)
+        document.getElementById('contactForm').addEventListener('submit', e => {
+            e.preventDefault();
+            document.getElementById('formStatus').textContent = 'Terima kasih! Pesan Anda sudah dicatat.';
+            e.target.reset();
+        });
+    </script>
 </body>
-
 </html>
